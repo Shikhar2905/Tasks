@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 2</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            background-color: lightblue;
+            border: 2px solid black;
+            border-style: double;
+            /* padding: 10px; */
+        }
+        a{
+            text-decoration: none;
+            display: block;
+            width: 100%;         
+        }
+        li a:hover{
+            background-color: orange;
+        }
+
+        .navbar{
+            margin-left: 50px;
+        }
+
+        #vNavbar li{
+            height: 20px;
+        }
+        #hNavbar{
+            margin-left: 100px;           
+        }
+        #hNavbar a{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="display: flex;">
+
+        <div id="vNavbar" class="navbar">
+            <h4>Vertical Navigation Bar</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Bootstrap</a></li>
+            </ul>
+        </div>
+
+        <div id="hNavbar" class="navbar">
+            <h4>Horizontal Navigation Bar</h4>
+            <ul style="display: flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Bootstrap</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
