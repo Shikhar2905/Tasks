@@ -11,29 +11,62 @@
             /* border-collapse: collapse; */
             width: 1000px;
             padding:2px;
-            background-color: rgb(14, 251, 235);
+            background-color: lightblue;
+        }
+        .infoTable{
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .line{
-            display: inline-block;
-            margin-right: 20px;
-            margin-top: 20px;
-        }
+        
         .shape{
-            height: 30px;
-            width: 30px;
-            border: 1px solid green;
+            height: 70px;
+            width: 120px;
+            border: 2px solid green;
             padding: 20px;
+            margin: 10px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* padding: 10px; */
+            margin: 50px;
+            justify-content: center;
         }
 
-        #grid{
-            margin-left: 50px;
-            margin-top: 50px;
+        #shape8{
+            border-radius:0px ;
+        }
+        #shape7{
+            height: 70px;
+            width: 75px;
+            border-radius: 100px;  
+        }
+        #shape6{
+            border-radius: 10px;
+        }
+        #shape5{
+            border-radius:0px ;
+        }
+        #shape4{
+            border-radius: 5px;
+        }
+        #shape3{
+            border-radius: 10px;
+        }
+        #shape2{
+            border-radius: 2px;
+        }
+        #shape1{
+            border-radius: 2px;
         }
     </style>
 </head>
 <body>
-    <table>
+    <table class="infoTable">
         <tr>
             <th>Firstname</th>
             <th>Lastname</th>
@@ -56,22 +89,16 @@
         </tr>
     </table>
 
-    <div style="display: flex;" id="grid">
-        <div class="line">
-            <div class="shape" id="1"></div>
-            <div class="shape" id="2"></div>
-            <div class="shape" id="3"></div>
-        </div>
-        <div class="line">
-            <div class="shape" id="4"></div>
-            <div class="shape" id="5"></div>
-            <div class="shape" id="6"></div>
-        </div>
-        <div class="line">
-            <div class="shape" id="7"></div>
-            <div class="shape" id="8"></div>
-            <div class="shape" id="9"></div>
-        </div>       
+    <div class="container">      
+            <div class="shape" id="shape1"></div>
+            <div class="shape" id="shape2"></div>
+            <div class="shape" id="shape3"></div>        
+            <div class="shape" id="shape4"></div>
+            <div class="shape" id="shape5"></div>
+            <div class="shape" id="shape6"></div>      
+            <div class="shape" id="shape7"></div>
+            <div class="shape" id="shape8"></div>
+            <div class="shape" id="shape9"></div>         
     </div>
 </body>
 </html>
